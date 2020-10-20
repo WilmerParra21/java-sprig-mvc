@@ -1,0 +1,29 @@
+body{
+	font-family: 'Lucida sans', sans-serif;
+}
+
+h1.color-rojo{
+	color: red;
+}
+
+h3.color-azul{
+	color: blue;
+}
+
+table{
+
+	margin: 2rem;
+	padding:0;
+	border: 0.2rem solid red;
+	background-color: darkred;
+}
+
+table th{
+	color: white;
+	border: 0.2rem solid gold;
+}
+
+table td{
+	border-bottom: 0.2rem solid white;
+	color: white;
+}

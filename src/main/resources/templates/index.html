@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1 class="color-rojo" th:text="${titulo}"></h1>
+<table th:if="${personas.size() > 0}">
+<thead>
+<th>Nombre</th>
+<th>Apellido</th>
+<th>Correo</th>
+</thead>
+<tbody>
+<tr th:each="persona: ${personas}">
+<td th:text="${persona.Nombre}"></td>
+<td th:text="${persona.Apellido}"></td>
+<td th:text="${persona.Correo}"></td>
+</tr>
+</tbody>
+</table>
+<h3 class="color-azul">Fondo Bonito</h3>
+<img th:src="@{/img/8788.png}" width="520">
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text = "${title}"></title>
+</head>
+<body>
+<table th:if="${estudiante.size() > 0}">
+<thead>
+<th>Id</th>
+<th>Nombre</th>
+<th>Apellido</th>
+<th>Dirección</th>
+</thead>
+<tbody>
+<tr th:each="est: ${estudiante}">
+<td th:text="${est.Id}"></td>
+<td th:text="${est.Nombre}"></td>
+<td th:text="${est.Apellido}"></td>
+<td th:text="${est.Direccion}"></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

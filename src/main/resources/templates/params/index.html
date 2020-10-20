@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Principal</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1 class="color-rojo">Enviar Parametros de la URL</h1>
+<ul>
+<li>
+<a th:href="@{/params/param(texto='Hola')}">params/param?texto=Hola</a>
+</li>
+<li>
+<a th:href="@{/params/varios(Saludo='Hey', numero=10)}">params/param?Saludo=Hey&numero=5</a>
+</li>
+</ul>
+<h3 class="color-azul">Spring</h3>
+</body>
+</html>

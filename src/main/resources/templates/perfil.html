@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Persona</title>
+</head>
+<body>
+<p th:text="${Atributo.Nombre}"></p>
+<p th:text="${Atributo.Apellido}"></p>
+<p th:if ="${Atributo.Correo}" th:text="${Atributo.Correo}"></p>
+<br>
+<p th:if="${Atributo.Correo == null}">No Existe</p>
+</body>
+</html>
